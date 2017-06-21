@@ -48,23 +48,10 @@ $(function(){
 		$("#eliminate").click(function(){
 			$("#list").empty("");
 		})
-//		$("#txt").click(function(){
-//		  $(this).attr("placeholder","");
-//		})
-		$("#txt").on("focus",function(){
-		$(this).removeClass("blur");
-		$(this).attr("placeholder","");
-		container.show=true;
-		container.show=false;
-	})
-	$("#txt").on("blur",function(){
-		if($(this).val()==""){
-			$(this).addClass("blur");
-			$(this).attr("placeholder","搜索文章、视频、订阅号")
-		}
-		
-	})
-	
+		$("#txt").click(function(){
+		  $("#show").html("");
+		})
+	  	
 	})
 })
 
